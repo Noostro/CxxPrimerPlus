@@ -39,6 +39,6 @@ for (i in seq_along(folders)) {
     allLen[i] <- len
 }
 
-barplot(allLen,
+barplot(allLen, las=2,
         main=paste("Total Lines", sum(allLen)),
         col=rainbow(length(allLen)))
