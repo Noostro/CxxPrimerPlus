@@ -14,13 +14,13 @@ int main() {
   char ch;
   cin.get(ch);
   while (ch != '@') {
-    if (ch >= 'a' && ch <= 'z') {  // could use if (islower(ch)) instead
+    if (ch >= 'a' && ch <= 'z') {  // could use "if (islower(ch))" instead
       ch = toupper(ch);
-    } else if ( ch >= 'A' && ch <= 'Z') { // could use if (isupper(ch)) instead
+    } else if ( ch >= 'A' && ch <= 'Z') { // could use "if (isupper(ch))" instead
       ch = tolower(ch);
     }
-    if (isdigit(ch)) // Stops gigits from displaying and puts a 'space' in their place instead
-        ch = ' ';    // Could also use if (ch >= '0' && ch <= '9')
+    if (isdigit(ch)) // Stops digits from displaying and puts a 'space' in their place instead
+        ch = ' ';    // Could also use "if (ch >= '0' && ch <= '9')"
     
     cout << ch;
     cin.get(ch);
