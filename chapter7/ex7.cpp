@@ -12,7 +12,7 @@ const int Max = 5;
 // function prototypes
 double * fill_array(double *begin, double *end);
 void show_array(const double *begin, const double *end);
-void revalue(double *begin, double *end, int r);
+void revalue(double *begin, double *end, double r);
 
 int main() {
   using namespace std;
@@ -64,7 +64,7 @@ void show_array(const double *begin, const double *end){
 }
 
 
-void revalue(double *begin, double *end, int r){
+void revalue(double *begin, double *end, double r){
   double *pt;
   for (pt = begin; pt != end; pt++)
     *pt *= r;
